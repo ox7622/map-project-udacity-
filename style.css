@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+@font-face {
+  font-family: 'Dosis';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v6/4hYyXH_8WmbBLamf6WjLwg.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  max-width: 900px;
+}
+
+.mapDiv {
+  width: 80%;
+  height: 100%;
+}
+
+#map {
+  height: 80vh;
+  width: 100%;
+  margin: 0;
+}
+
+.changeMapWidth {
+  width: 100%;
+}
+
+.changeWidthBack {
+  width: 80%;
+}
+
+h2 {
+  width: 30%;
+}
+
+h3 {
+  margin: 5px;
+}
+
+p {
+  margin: 2px;
+}
+
+#weather_div {
+  width: 70%;
+  background: #eff0f2;
+}
+
+#weather_header_div {
+  display: flex;
+}
+
+.floating_panel {
+  width: 20%;
+  min-width: 150px;
+}
+
+#filter_field {
+  display: flex;
+}
+
+#filter_button {
+  margin-left: 5px;
+  width: 30%;
+}
+
+#filter_input {
+  width: 70%;
+}
+
+#list_of_places {
+  width: 100%;
+}
+
+.weather_hourly {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header,
+        #container {
+  display: flex;
+  margin: 0;
+}
+
+#street-view {
+  width: 250px;
+  height: 100%;
+  display: none;
+  float: right;
+}
+
+.hours {
+  width: 25%;
+  margin: auto;
+  padding: 3px;
+}
+
+li {
+  list-style-type: none;
+  vertical-align: center;
+}
+
+#list_of_places {
+  margin: 10px;
+  padding: 0;
+}
+
+#list_of_places li {
+  margin-top: 5px;
+}
+
+#list_of_places li:hover {
+  color: silver;
+}
+
+.foursquare li {
+  list-style-type: decimal;
+}
+
+.icon_temp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon {
+  width: 42px;
+  margin: 0;
+}
+
+#trafic_icon_text {
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+}
+
+#icons_map_top {
+  margin: 5px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#icons_map_top li {
+  width: 15%;
+  display: table-cell;
+}
+
+.text-danger {
+  color: red;
+  -webkit-text-stroke: 2px background-color;
+}
+
+.fa:hover {
+  color: silver;
+}
+
+.text-danger:hover {
+  color: black;
+}
+
+.temperature {
+  width: 30%;
+  margin: 0;
+}
+
+#weather_header {
+  width: 80%;
+}
+
+#weather_logo {
+  width: 100px;
+  float: right;
+  height: 100%;
+}
+
+.foursquare,
+        #marker_address,
+        h4 {
+  width: 100%;
+  margin-bottom: 3px;
+  padding: 0;
+}
+
+.foursquare li {
+  margin: 0 0 5px 15px;
+  width: 100%;
+  max-width: 150px;
+}
+
+.infowindow {
+  max-height: 270px;
+}
+
+.infowindow li {
+  width: 100%;
+}
+
+.hide, .hideW {
+  display: none;
+}
+
+.show {
+  display: "";
+}
+        /* Mobile version */
+        
+@media only screen and (min-device-width: 300px) and (max-device-width: 750px) and (-webkit-min-device-pixel-ratio: 2) {
+            
+  html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  h2,h3 {
+    width: 100%;
+    max-height: 50px;
+  }
+
+  #weather_div {
+    width: 100vw;
+    display: block;
+  }
+
+  header {
+    display: block;
+  }
+
+  .floating_panel {
+    display: block;
+  }
+
+  #list_of_places li {
+    max-width: 100px;
+    margin: 5px;
+  }
+
+  #icon_hide_weather {
+    margin: 20px;
+  }
+
+  #icons_map_top li {
+    width: 25%;
+    margin: 0 20px 0 20px;
+  }
+
+  .mapDiv {
+    width: 100%;
+    height: 100vh;
+  }
+
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+
+  .showW {
+    display: flex;
+  }
+
+  .infowindow {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  .icon_fs {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+}
+    
